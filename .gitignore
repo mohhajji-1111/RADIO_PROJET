@@ -50,9 +50,9 @@ tensorboard/
 data/NSCLC-Radiomics/
 data/processed/images_nifti/
 data/processed/masks_nifti/
-data/processed/normalized/
+# data/processed/normalized/  # Commenté - maintenant géré par Git LFS
 *.nii
-*.nii.gz
+# *.nii.gz  # Commenté - maintenant géré par Git LFS
 *.dcm
 
 # Results (can be large)
