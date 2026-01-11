@@ -50,8 +50,8 @@ CONFIG = {
     
     # Training incrémental
     'patients_per_batch': 25,      # 25 patients par batch (GPU peut gérer plus)
-    'epochs_per_batch': 10,        # 10 epochs par batch pour bien apprendre
-    'total_rounds': 3,             # 3 rounds = 30 epochs totales sur chaque patient
+    'epochs_per_batch': 15,        # 15 epochs par batch pour TRÈS bien apprendre
+    'total_rounds': 4,             # 4 rounds = 60 epochs totales sur chaque patient (meilleur apprentissage)
     
     # Hyperparamètres - CLÉS POUR BONS RÉSULTATS
     'batch_size': 8,               # 8-16 selon mémoire GPU (plus = plus stable)
