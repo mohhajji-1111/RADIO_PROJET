@@ -1,0 +1,59 @@
+================================================================================
+STATISTIQUES DES VOLUMES ROIs (cm³)
+================================================================================
+
+GTV:
+  Patients avec cet organe: 157/158 (99.4%)
+  Volume moyen: 36.94 cm³
+  Volume médian: 27.84 cm³
+  Écart-type: 39.10 cm³
+  Min: 0.09 cm³
+  Max: 235.49 cm³
+
+PTV:
+  Patients avec cet organe: 0/158 (0.0%)
+  Aucun patient avec volume > 0
+
+Poumon_Droit:
+  Patients avec cet organe: 149/158 (94.3%)
+  Volume moyen: 782.08 cm³
+  Volume médian: 761.44 cm³
+  Écart-type: 200.09 cm³
+  Min: 188.59 cm³
+  Max: 1304.40 cm³
+
+Poumon_Gauche:
+  Patients avec cet organe: 150/158 (94.9%)
+  Volume moyen: 680.91 cm³
+  Volume médian: 654.44 cm³
+  Écart-type: 185.67 cm³
+  Min: 258.08 cm³
+  Max: 1196.59 cm³
+
+Coeur:
+  Patients avec cet organe: 44/158 (27.8%)
+  Volume moyen: 267.34 cm³
+  Volume médian: 258.89 cm³
+  Écart-type: 82.85 cm³
+  Min: 112.08 cm³
+  Max: 434.79 cm³
+
+Oesophage:
+  Patients avec cet organe: 125/158 (79.1%)
+  Volume moyen: 17.74 cm³
+  Volume médian: 17.73 cm³
+  Écart-type: 4.35 cm³
+  Min: 5.36 cm³
+  Max: 29.01 cm³
+
+Moelle:
+  Patients avec cet organe: 151/158 (95.6%)
+  Volume moyen: 30.81 cm³
+  Volume médian: 29.67 cm³
+  Écart-type: 7.52 cm³
+  Min: 17.84 cm³
+  Max: 58.04 cm³
+
+================================================================================
+Total patients analysés: 158
+================================================================================

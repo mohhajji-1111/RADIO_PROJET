@@ -1,0 +1,46 @@
+# ============================================================================
+# PATHS CONFIGURATION
+# ============================================================================
+# This file contains all path configurations for the NSCLC segmentation project
+# Update paths according to your local environment
+# ============================================================================
+
+# Root directories
+project_root: "C:/Users/HP/Desktop/RADIO_PROJET"
+data_root: "C:/Users/HP/Desktop/RADIO_PROJET/data"
+
+# Raw data paths
+raw_data:
+  nsclc_radiomics: "C:/Users/HP/Desktop/RADIO_PROJET/DATA/NSCLC-Radiomics"
+  metadata_csv: "C:/Users/HP/Desktop/RADIO_PROJET/DATA/metadata.csv"
+  phase1_metadata: "C:/Users/HP/Desktop/RADIO_PROJET/nsclc_metadata_extracted.csv"
+  quality_checks: "C:/Users/HP/Desktop/RADIO_PROJET/nsclc_quality_checks.csv"
+
+# Processed data paths
+processed:
+  root: "C:/Users/HP/Desktop/RADIO_PROJET/data/processed"
+  images_nifti: "C:/Users/HP/Desktop/RADIO_PROJET/data/processed/images_nifti"
+  masks_nifti: "C:/Users/HP/Desktop/RADIO_PROJET/data/processed/masks_nifti"
+  normalized: "C:/Users/HP/Desktop/RADIO_PROJET/data/processed/normalized"
+  splits: "C:/Users/HP/Desktop/RADIO_PROJET/data/processed/splits"
+
+# Results paths
+results:
+  root: "C:/Users/HP/Desktop/RADIO_PROJET/data/results"
+  predictions: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/predictions"
+  metrics: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/metrics"
+  models: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/models"
+  visualizations: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/visualizations"
+  tensorboard: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/tensorboard"
+
+# Model checkpoints
+checkpoints:
+  best_model: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/models/best_model.pth"
+  last_checkpoint: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/models/checkpoint_last.pth"
+  checkpoint_dir: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/models/checkpoints"
+
+# Logs
+logs:
+  training: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/logs/training.log"
+  preprocessing: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/logs/preprocessing.log"
+  evaluation: "C:/Users/HP/Desktop/RADIO_PROJET/data/results/logs/evaluation.log"

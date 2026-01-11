@@ -1,0 +1,101 @@
+# .gitignore for NSCLC Segmentation Project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Conda
+.conda/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+!best_model.pth
+
+# TensorBoard
+runs/
+logs/
+tensorboard/
+
+# Data (large files)
+data/NSCLC-Radiomics/
+data/processed/images_nifti/
+data/processed/masks_nifti/
+data/processed/normalized/
+*.nii
+*.nii.gz
+*.dcm
+
+# Results (can be large)
+data/results/predictions/*.nii.gz
+data/results/visualizations/*.png
+data/results/visualizations/*.jpg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Weights & Biases
+wandb/
+
+# Environment variables
+.env
+.env.local
+
+# Compressed files
+*.zip
+*.tar.gz
+*.tar
+*.rar
