@@ -1,0 +1,78 @@
+# ============================================================================
+# DOCKER COMPOSE - SERVEUR PACS ORTHANC
+# Projet : Segmentation Multi-Organes Pulmonaire
+# ============================================================================
+# 
+# Ce fichier déploie un serveur PACS Orthanc complet avec :
+# - Interface web sur le port 8042
+# - Serveur DICOM sur le port 4242
+# - Stockage persistant des données
+# - Configuration sécurisée
+#
+# UTILISATION :
+#   cd pacs
+#   docker-compose up -d
+#
+# ============================================================================
+
+version: '3.8'
+
+services:
+  # ==========================================================================
+  # SERVEUR ORTHANC PACS
+  # ==========================================================================
+  orthanc:
+    image: orthancteam/orthanc:latest
+    container_name: orthanc-pacs
+    restart: unless-stopped
+    
+    # Ports exposés
+    ports:
+      - "8042:8042"   # Interface Web REST API
+      - "4242:4242"   # Serveur DICOM (réception d'images)
+    
+    # Volumes persistants
+    volumes:
+      - orthanc-storage:/var/lib/orthanc/db      # Base de données
+      - ./orthanc.json:/etc/orthanc/orthanc.json:ro  # Configuration
+      - ./dicom-import:/var/lib/orthanc/import   # Dossier d'import automatique
+    
+    # Variables d'environnement
+    environment:
+      ORTHANC__NAME: "RADIO_PROJET_PACS"
+      ORTHANC__DICOM_AET: "RADIOPACS"
+      ORTHANC__DICOM_CHECK_CALLED_AET: "false"
+      ORTHANC__AUTHENTICATION_ENABLED: "true"
+      VERBOSE_ENABLED: "true"
+      VERBOSE_STARTUP: "true"
+    
+    # Healthcheck
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8042/system"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    
+    # Ressources
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
+    
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+# ==========================================================================
+# VOLUMES PERSISTANTS
+# ==========================================================================
+volumes:
+  orthanc-storage:
+    name: orthanc-pacs-data
+    driver: local

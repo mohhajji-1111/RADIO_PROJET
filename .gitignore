@@ -35,24 +35,46 @@ ENV/
 .ipynb_checkpoints
 *.ipynb_checkpoints/
 
-# PyTorch
+# PyTorch models (large files)
 *.pth
 *.pt
 *.ckpt
+checkpoints/
+training_output/
 !best_model.pth
 
-# TensorBoard
+# TensorBoard & Logs
 runs/
 logs/
 tensorboard/
 
-# Data (large files)
+# Kaggle extracted datasets (large)
+kaggle_dataset_extracted/
+kaggle_upload/
+temp_colab/
+
+# PACS & Docker volumes
+pacs/dicom-import/
+pacs/data/
+
+# Visualizations (can be regenerated)
+visualizations/
+
+# Data (large files) - EXCLUSION COMPLÈTE
+DATA/
+data/
+DATA/NSCLC-Radiomics/
+DATA/NSCLC-Radiomics-Genomics/
+DATA/NSCLC-Radiomics-Interobserver1/
+DATA/processed/
+DATA/raw/
+DATA/results/
 data/NSCLC-Radiomics/
 data/processed/images_nifti/
 data/processed/masks_nifti/
-# data/processed/normalized/  # Commenté - maintenant géré par Git LFS
+data/processed/normalized/
 *.nii
-# *.nii.gz  # Commenté - maintenant géré par Git LFS
+*.nii.gz
 *.dcm
 
 # Results (can be large)
@@ -98,4 +120,12 @@ wandb/
 *.zip
 *.tar.gz
 *.tar
+
+# Large presentation files
+*.pptx
+rapport_segmentation_pulmonaire.pdf
+rapport_segmentation_pulmonaire.out
+*.pdf
+!joss.07361.pdf
+!ncomms5006.pdf
 *.rar
