@@ -121,11 +121,28 @@ wandb/
 *.tar.gz
 *.tar
 
-# Large presentation files
+# Large presentation/document files
 *.pptx
-rapport_segmentation_pulmonaire.pdf
-rapport_segmentation_pulmonaire.out
 *.pdf
-!joss.07361.pdf
-!ncomms5006.pdf
+*.out
+
+# Personal/internal files (not for public repo)
+GITHUB_SETUP.md
+GITHUB_RESUME.md
+GUIDE_PRESENTATION.md
+LATEX_COMPILATION_GUIDE.md
+PACS_TESTING_GUIDE.md
+PROJET_9_CHECKLIST.md
+PROBLEMES_ET_DEFIS.txt
+RUN_PACS_TESTS.bat
+create_presentation.py
+create_amazing_presentation.py
+package_for_transfer.py
+setup_new_pc.py
+test_*.py
+setup_orthanc_server.py
+roi_volumes_*.csv
+roi_volumes_*.txt
+pacs/
+kaggle_dataset_extracted/
 *.rar
