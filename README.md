@@ -1,13 +1,33 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python">
-  <img src="https://img.shields.io/badge/PyTorch-2.0+-red.svg" alt="PyTorch">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
-  <img src="https://img.shields.io/badge/Medical%20Imaging-DICOM-orange.svg" alt="DICOM">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/CUDA-11.0+-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA">
 </p>
 
-# 🫁 NSCLC Multi-Organ Segmentation
+<p align="center">
+  <img src="https://img.shields.io/badge/Medical_Imaging-DICOM-FF6B6B?style=flat-square" alt="DICOM">
+  <img src="https://img.shields.io/badge/Deep_Learning-U--Net-9B59B6?style=flat-square" alt="U-Net">
+  <img src="https://img.shields.io/badge/Dataset-NSCLC_Radiomics-3498DB?style=flat-square" alt="Dataset">
+  <img src="https://img.shields.io/github/stars/mohhajji-1111/RADIO_PROJET?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/forks/mohhajji-1111/RADIO_PROJET?style=flat-square" alt="Forks">
+</p>
 
-> **Deep Learning pour la segmentation automatique multi-organes sur CT scans thoraciques**
+<h1 align="center">🫁 NSCLC Multi-Organ Segmentation</h1>
+
+<p align="center">
+  <b>Deep Learning pour la segmentation automatique multi-organes sur CT scans thoraciques</b>
+</p>
+
+<p align="center">
+  <a href="#-installation">Installation</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-résultats">Résultats</a> •
+  <a href="#-documentation">Documentation</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
+
+---
 
 Architecture **U-Net** pour la segmentation simultanée de **8 structures anatomiques** en radiothérapie pulmonaire, entraînée sur le dataset **NSCLC-Radiomics** (422 patients).
 
@@ -252,20 +272,36 @@ python scripts/evaluate_unet.py --model best_model.pth --data DATA/processed/
 
 ---
 
-## 📄 License
+## 🤝 Contributing
 
-MIT License - voir [LICENSE](LICENSE) pour détails.
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) first.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 👤 Auteur
+## 📄 License
 
-**Projet de Segmentation Médicale**
-- Master en Intelligence Artificielle
-- Spécialisation: Imagerie Médicale & Deep Learning
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- [The Cancer Imaging Archive (TCIA)](https://www.cancerimagingarchive.net/) for the NSCLC-Radiomics dataset
+- [PyTorch](https://pytorch.org/) team for the deep learning framework
+- Medical imaging community for open-source tools
 
 ---
 
 <p align="center">
-  <b>⭐ Star ce repo si vous le trouvez utile!</b>
+  <b>⭐ Star this repository if you find it useful!</b>
+</p>
+
+<p align="center">
+  Made with ❤️ for Medical AI Research
 </p>
